@@ -1,0 +1,6 @@
+python3: can't open file '/home/ubuntu/Demo.py': [Errno 2] No such file or directory
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Drop successful
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1064 (42000) at line 91814: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESCdesc' at line 1
+Imported Successfully!

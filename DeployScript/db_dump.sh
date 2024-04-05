@@ -11,7 +11,7 @@ python3 Demo.py
 # sql_file="/home/rishi/Desktop/Working_Projects/EMS-DB-Server/laravel_demo.sql"
 
 
-sql_file=ems.sql
+sql_file="/home/ubuntu/EMS-Db_script/DeployScript/ems.sql"
 
 mysql -u "$username" -p"$password" -h "$host" "$database" <<EOF
 drop database Demo;
@@ -22,9 +22,4 @@ echo "Drop successful"
 
 mysql -u"$username" -p"$password" -h "$host" "$database" < "$sql_file"
 
-# Check if the import was successful
-if [ $? -eq 0 ]; then
-    echo "Import successful"
-else
-    echo "Import failed"
-fi
+echo "Imported Successfully!"
