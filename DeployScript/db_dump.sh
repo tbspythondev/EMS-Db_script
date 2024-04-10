@@ -10,7 +10,8 @@ python3 Demo.py
 # # Path to the SQL file
 # sql_file="/home/rishi/Desktop/Working_Projects/EMS-DB-Server/laravel_demo.sql"
 
-
+echo "-----------------------------------------------------------------"
+echo Current Date and Time is: `date +"%Y-%m-%d %T"`
 sql_file="/home/ubuntu/EMS-Db_script/DeployScript/ems.sql"
 
 mysql -u "$username" -p"$password" -h "$host" "$database" <<EOF
@@ -19,7 +20,6 @@ create database Demo;
 EOF
 
 echo "Drop successful"
-
 mysql -u"$username" -p"$password" -h "$host" "$database" < "$sql_file"
 
 echo "Imported Successfully!"
